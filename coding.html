@@ -7,8 +7,9 @@
  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <nav class="flex justify-between bg-gray-900 text-white w-screen" >
-        <h1 class="flex items-center p-4 border-b-2 border-black-500 border-opacity-0 hover:border-opacity-100 hover:text-gray-500 duration-200 cursor-pointer active" href="index.html">My Hobbies</h1>       
+    
+    <nav class="flex justify-between bg-gray-900 text-white w-screen py-6 px-4">
+        <h1 class="flex items-center p-4 border-b-2 border-black-500 border-opacity-0 hover:border-opacity-100 hover:text-gray-500 duration-200 cursor-pointer active"><a href="index.html">The Day in the life of Zak</a></h1>       
         <ul class="flex items-center" >
 
             <li class="p-4 border-b-2 border-black-500 border-opacity-0 hover:border-opacity-100 hover:text-gray-500 duration-200 cursor-pointer active">
@@ -22,13 +23,61 @@
             <li class="p-4 border-b-2 border-black-500 border-opacity-0 hover:border-opacity-100 hover:text-gray-500 duration-200 cursor-pointer active">
                 <a href="football.html">Football</a>
             </li>
-    
-            <li class="p-4 border-b-2 border-black-500 border-opacity-0 hover:border-opacity-100 hover:text-gray-500 duration-200 cursor-pointer active">
-                <a href="about.html">About me</a>
-            </li>
         </ul>
-    </nav>
+    </nav>  
 
-    <h1 class="p-4 border-b-2 border-black-500">Coding</h1>
+<main class="container mx-auto px-4 py-10 space-y-10">
+        <h1 class="text-3xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-4 text-center">
+          The Journey to becoming a Full Stack Developer 
+        </h1>
+    
+<section class="bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto my-6"> <!-- add to cheat sheet, m=margin y=vertical axis top to bottom and 6=spacing unit(equals 1.5rem or 24px)-->
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Where I'm at with coding</h2>
+    <p class="text-gray-600 leading-relaxed">I'm currently learning front-end development through The Developer Academy. We are currently in phase 1, which focuses on HTML, CSS, TailwindCSS, JavaScript.
+        This page is a space for notes, cheatsheets, mini-projects, and reminders as I build up my skills. Nothing fancy, just documenting the process. 
+    </p>
+</section>
+
+<section class="grid md:grid-cols-3 gap-2 max-w-3xl mx-auto px-4 py-8">
+
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transation">
+        <h3 class="text-xl font-semibold mb-2">HTML Semantics Cheat Sheet</h3>
+        <p class="text-gray-600 mb-4">Quick reference for HTML5 tags, structure, and accessibility best practices.</p>
+        <a href="/Users/a123/hobbyproject/v2_html_semantics_cheatsheet_extended.pdf" class="text-blue-600 font-medium hover:underline">View Cheat Sheet</a>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">TailwindCSS Cheat Sheet</h3>
+        <p class="text-gray-600 mb-4">My most used classes and layout patterns - a personal quick lookup.</p>
+        <a href="/Users/a123/hobbyproject/v2_tailwind_cheatsheet_extended.pdf" class="text-blue-600 font-medium hover:underline">View Cheat Sheet</a>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Git command Cheat Sheet</h3>
+        <p class="text-gray-600 mb-4">Basic git commands to refresh the memory, including how to stage, commit, push, pull, handle branches, fix mistakes and use stash effectively</p>
+        <a href="/Users/a123/hobbyproject/v2_git_command_cheatsheet_full.pdf" class="text-blue-600 font-medium hover:underline">View Cheat Sheet</a>
+    </div>
+</section>
+
+<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform text-center max-w-3xl mx-auto my-10 border border-gray-200">
+    <h3 class="text-xl font-semibold mb-2">Upcomming Mini Projects</h3>
+    <p class="text-gray-600 mb-4">Ideas and concepts I'm planning to build to reinforce learning(subject to course assigment requirements):</p>
+    <ul class="list-inside text-gray-600">
+        <li>📅 Javascript-powered Weekly Planner</li>
+        <li>💪 Interactive Gym Routine Tracker</li>
+        <li>🍔 Ai Recipe Generator</li>
+    </ul>
+</div>
+
+<section class="text-center py-10 text-gray-600 bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Connect with me:</h3>
+    <a href="https://github.com/funkmafia" class="inline-flex items-center gap-2 text-gray-500 hover:text-black hover:underline">GitHub</a>
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" class="inline-flex items-center w-6 h-6">
+</section>
+</main>
+
+        <footer class="flex justify-between bg-gray-900 text-white w-screen py-6 px-4">
+            © 2025 The Day in the life of Zak - Blog. 
+        </footer>
 </body>
 </html>
