@@ -1,124 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My hobbies | coding, hiking, and food</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My hobbies | coding, hiking, and food</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
-    <nav class="bg-gray-900 text-white w-full px-4 py-6">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          
-         
-          <h1 class="text-lg font-semibold mb-4 md:mb-0 hover:text-gray-400 transition">
-            <a href="index.html">The Day in the Life of Zak</a>
-          </h1>
-      
-        
-          <ul class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
-            <li><a href="coding.html" class="hover:text-gray-400 transition">Coding</a></li>
-            <li><a href="hiking.html" class="hover:text-gray-400 transition">Hiking</a></li>
-            <li><a href="food.html" class="hover:text-gray-400 transition">Food</a></li>
-          </ul>
-        </div>
-      </nav>
+  <nav class="bg-gray-900 text-white w-full px-4 py-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center"> <!-- flex-col for mobile, and flex-row for any medium plus size screens, better aesthetics for user-->
+      <h1 class="text-lg font-semibold mb-4 md:mb-0 hover:text-gray-400 transition"><!-- on desktop, when you hover the text, it highlights grey and changes once clicked-->
+        <a href="index.html">The Day in the Life of Zak</a> <!-- instead of generic 'homepage'-->
+      </h1>
 
-<main class="container mx-auto px-4 py-10 space-y-10">
+      <ul class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+        <li>
+          <a href="coding.html" class="hover:text-gray-400 transition">Coding</a>
+        </li>
+        <li>
+          <a href="hiking.html" class="hover:text-gray-400 transition">Hiking</a>
+        </li>
+        <li>
+          <a href="food.html" class="hover:text-gray-400 transition">Food</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-        <h1 class="text-3xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-4 text-center">
-          Welcome to my passions, my interests, and my lifestyle
-        </h1>
+  <main class="container mx-auto px-4 py-10 space-y-10">
+    <h1 class="text-3xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-4 text-center">
+      Welcome to my passions, my interests, and my lifestyle
+    </h1>
 
-<div class="max-w-6xl mx-auto my-10 px-4">
-<h2 class="text-2xl font-semibold mb-4 text-gray-800 text-center"> Snippets of my day to day</h2>
-
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-<img src="marc-mintel-Q-ioK6NPFos-unsplash.jpg" alt="coding desk" class="rounded-lg object-cover w-full h-40 shadow-md" />
-<img src="ambitious-studio-rick-barrett-1RNQ11ZODJM-unsplash.jpg" alt="workout session" class="rounded-lg object-cover w-full h-40 shadow-md" />
-<img src="patrik-michalicka-cv4bk-aedJE-unsplash.jpg" alt="music" class="rounded-lg object-cover w-full h-32 h-40 shadow-md" />
-</div>
-</div>
-
-<section class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">💻 Coding Journey</h3>
-        <p class="text-gray-600 mb-4">
-            My journey of becoming a full stack developer. From zero to building real projects. One line of code at a time. 
-        </p>
-        <a href="coding.html" class="text-gray-500 font-medium hover:underline" class="text-gray-500 font-medium hover:underline">Read More ... </a>
+    <div class="max-w-6xl mx-auto my-10 px-4">
+      <h2 class="text-2xl font-semibold mb-4 text-gray-800 text-center">
+        Snippets of my day to day
+      </h2>
+<!-- instead of just having one grid class, decided to provide structure so if the screen size changes, so will the image layout. e.g when on a mobile, portrait, will show 1 col, but when on landscape will show 3 columns-->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="marc-mintel-Q-ioK6NPFos-unsplash.jpg" alt="coding desk"
+          class="rounded-lg object-cover w-full h-40 shadow-md" />
+        <img src="ambitious-studio-rick-barrett-1RNQ11ZODJM-unsplash.jpg" alt="workout session"
+          class="rounded-lg object-cover w-full h-40 shadow-md" />
+        <img src="patrik-michalicka-cv4bk-aedJE-unsplash.jpg" alt="music"
+          class="rounded-lg object-cover w-full h-40 shadow-md" />
+      </div>
     </div>
 
-    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+    <section class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">💻 Coding Journey</h3> <!-- used emoji's on h2 and h3 tags to bring colour and life-->
+        <p class="text-gray-600 mb-4">
+          My journey of becoming a full stack developer. From zero to building
+          real projects. One line of code at a time.
+        </p>
+        <a href="coding.html" class="text-gray-500 font-medium hover:underline"
+          class="text-gray-500 font-medium hover:underline">Read More ...
+        </a>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
         <h3 class="text-xl font-semibold mb-2">⛰️ The Hikes and Lows</h3>
         <p class="text-gray-600 mb-4">
-            A look at my top 3 favourite hikes, why i love to hike, with an option to add your recommendations. 
+          A look at my top 3 favourite hikes, why i love to hike, with an
+          option to add your recommendations.
         </p>
-        <a href="hiking.html" class="text-gray-500 font-medium hover:underline">Read More ... </a>
-    </div>
+        <a href="hiking.html" class="text-gray-500 font-medium hover:underline">Read More ...
+        </a>
+      </div>
 
-    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
         <h3 class="text-xl font-semibold mb-2">🍕 Food for Thought</h3>
         <p class="text-gray-600 mb-4">
-            A look at my top 5 dishes, along with some of my favourite cuisines, with an option to add your recommendations. 
+          A look at my top 5 dishes, along with some of my favourite cuisines,
+          with an option to add your recommendations.
         </p>
         <a href="food.html" class="text-gray-500 font-medium hover:underline">Read More ...</a>
+      </div>
+    </section>
+
+    <article class="bg-white p-6 rounded-lg shadow-md max-w-6xl mx-auto">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        🍊 A Bit About Me
+      </h2>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        This space is just me being me. Sharing the things I enjoy, the things
+        I'm building, and the parts of life that bring real value. Whether
+        it's a smooth Saturday morning walk, a fresh gym session to get my
+        mind right, or cracking a tricky line of JavaScript over an oat milk
+        flat white. I've started to appreciate the process as much as the
+        result. Slow grind. Clean focus. Real progress.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        I kicked things off as a brand manager after earning my master's at
+        Loughborough University. It was creative, mid-energy, and taught me
+        how to move smart in mid-paced spaces, but lacked incentive. From
+        there, I transitioned into the finance world; helping people navigate
+        major life decisions as a mortgage advisor. Impacting people's life on
+        a big scale. It was solid work with real impact, but deep down, I
+        wanted something with more freedom. More flow. More of me in it.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        That's when I started diving into tech out of pure curiosity. I picked
+        up code, started building from scratch, and fell in love with the
+        challenge, and with the structure and creativity it gives you. It's
+        like the gym for your brain; and I'm hooked.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        These days, I keep it simple and intentional. Smoothie in the morning
+        for the health kick. Walks with no distractions. A focused lift to
+        reset. A few hours in a coffee shop soaking in the ambiance, tapping
+        keys to a good playlist, learning something from nothing. That's the
+        rhythm for me.
+      </p>
+      <p class="text-gray-500 leading-relaxed mb-4">
+        Not every day's a highlight reel for me, and that's more than cool
+        with me. Some days you cruise. Other days you push. But as long as I'm
+        showing up with presence and purpose, I know I'm in motion. Good
+        energy with organic growth and hopefully solid results.
+      </p>
+    </article>
+
+    <div class="max-w-6xl mx-auto my-10 px-4">
+      <h2 class="text-2xl font-semibold mb-4 text-gray-800 text-center">
+        Vision, Intention, Lifestyle
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="claudia-altamimi-3JLx2c3as6Q-unsplash.jpg" alt="Mountain-side holiday destination with ocean view"
+          class="rounded-lg object-cover object-bottom w-full h-40 shadow-md" />
+        <img src="suganth-xJC_N991Fao-unsplash.jpg" alt="running on the beach"
+          class="rounded-lg object-cover object-bottom w-full h-40 shadow-md" />
+        <img src="iyan-ryan-begaQyw3pZE-unsplash.jpg" alt="work space"
+          class="rounded-lg object-cover object-bottom w-full h-40 shadow-md" />
+      </div>
     </div>
-</section>
-      
-        <article class="bg-white p-6 rounded-lg shadow-md max-w-6xl mx-auto">
-          <h2 class="text-2xl font-semibold text-gray-800 mb-4">🍊 A Bit About Me</h2>
-          <p class="text-gray-600 leading-relaxed mb-4">
-            This space is just me being me. Sharing the things I enjoy, the things I’m building, and the parts of life that bring real value. Whether it’s a smooth Saturday morning walk, a fresh gym session to get my mind right, or cracking a tricky line of JavaScript over an oat milk flat white. I’ve started to appreciate the process as much as the result. Slow grind. Clean focus. Real progress.
-          </p>
-          <p class="text-gray-600 leading-relaxed mb-4">
-            I kicked things off as a brand manager after earning my master’s at Loughborough University. It was creative, mid-energy, and taught me how to move smart in mid-paced spaces, but lacked incentive. From there, I transitioned into the finance world; helping people navigate major life decisions as a mortgage advisor. Impacting people's life on a big scale. It was solid work with real impact, but deep down, I wanted something with more freedom. More flow. More of me in it.
-          </p>
-          <p class="text-gray-600 leading-relaxed mb-4">
-            That’s when I started diving into tech out of pure curiosity. I picked up code, started building from scratch, and fell in love with the challenge, and with the structure and creativity it gives you. It’s like the gym for your brain; and I’m hooked.
-          </p>
-          <p class="text-gray-600 leading-relaxed mb-4">These days, I keep it simple and intentional. Smoothie in the morning for the health kick. Walks with no distractions. A focused lift to reset. A few hours in a coffee shop soaking in the ambuiance, tapping keys to a good playlist, learning something from nothing. That’s the rhythm for me.</p>
-          <p class="text-gray-500 leading-relaxed mb-4">Not every day’s a highlight reel for me, and that’s more than cool with me. Some days you cruise. Other days you push. But as long as I’m showing up with presence and purpose, I know I’m in motion. Good energy with organic growth and hopefully solid results.
-        </article>
-
-        <div class="max-w-6xl mx-auto my-10 px-4">
-            <h2 class="text-2xl font-semibold mb-4 text-gray-800 text-center">Vision, Intention, Lifestyle</h2>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <img src="claudia-altamimi-3JLx2c3as6Q-unsplash.jpg" alt="holiday destination" class="rounded-lg object-cover object-bottom w-full h-40 shadow-md" />
-            <img src="suganth-xJC_N991Fao-unsplash.jpg" alt="running on the beach" class="rounded-lg object-cover object-bottom w-full h-40 shadow-md" />
-            <img src="iyan-ryan-begaQyw3pZE-unsplash.jpg" alt="work space" class="rounded-lg object-cover object-bottom w-full h-32 h-40 shadow-md" />
-            </div>
-            </div>
-      <!-- object-bottom pushes the image down, object-up lifts the image up-->
-
+    <!-- object-bottom pushes the image down, object-up lifts the image up-->
 
     <section class="text-center py-10 text-gray-600 bg-white p-6 rounded-lg shadow-md max-w-6xl mx-auto">
-        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Connect with me:</h3>
-        <a rel="noopener" href="https://github.com/funkmafia" target="_blank" class="inline-flex items-center gap-2 text-gray-500 hover:text-black hover:underline">GitHub</a>
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" class="inline-flex items-center w-6 h-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+        Connect with me:
+      </h3>
+      <a rel="noopener" href="https://github.com/funkmafia" target="_blank"
+        class="inline-flex items-center gap-2 text-gray-500 hover:text-black hover:underline">GitHub</a>
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo"
+        class="inline-flex items-center w-6 h-6" />
     </section>
-</main>
+  </main>
 
-    
-    <footer class="flex justify-between bg-gray-900 text-white w-screen py-6 px-4">
-        © 2025 The Day in the life of Zak - Blog. 
-    </footer>
-
+  <footer class="flex justify-between bg-gray-900 text-white w-screen py-6 px-4">
+    © 2025 The Day in the life of Zak - Blog.
+  </footer>
 </body>
+
 </html>
 
-<!--
+<!-- Screen sizing 
 sm: bg-white-500 / for a small screen 
 md: bg-white-500 / for a medium screen
 lg: bg-white-500 / for a large screen
 xl
-2xl
+2xl etc
 -->
 
-<!-- google html entity code !! ask chatgpt to convert 
--->
+<!-- Majority of sections and even divs follow a max-w-6xl sizing for consistency, and to break the page up, one div or section on each page will have a max-w-4xl due to characters within the section/div for aesthetic purposes. 
+     With the max-w-4xl sizing, will have a hover:shadow-2xl to bring the section to life more.  -->
 
-<!-- any link to open new tab / completed
--->
+<!-- Replaced all ’ with ' -->
