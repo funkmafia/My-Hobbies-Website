@@ -1,8 +1,17 @@
-# My Hobbies Website
+# 🌐 My Hobbies Website
 
-A hobby website built using pure **HTML** and **CSS**; deployed on **GitHub Pages**.
+A personal lifestyle website built using **pure HTML** and **Tailwind CSS**.  
+Explore my passions — from coding and hiking to food — all wrapped in a clean, responsive layout. Deployed on github.
 
-🔗 **Live Site**: [https://example.com](https://example.com)
+🚀 **Live Site**: [https://funkmafia.github.io/My-Hobbies-Website](https://funkmafia.github.io/My-Hobbies-Website)
+
+---
+
+## 🧰 Tech Stack
+
+- **HTML5**
+- **Tailwind CSS**
+- **GitHub Pages** (for deployment)
 
 ---
 
@@ -27,3 +36,8 @@ Steps to follow to contribute to the project:
 	5.	Open a Pull Request and describe your changes.
 
 ⸻
+
+📌 Credits
+
+Built with 💻 and ☕ by Zak
+Background images courtesy of Unsplash
